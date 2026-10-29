@@ -8,7 +8,7 @@
 <meta property="og:title" content="De Todólogo a Director — Taller presencial 2 días">
 <meta property="og:description" content="Pasa de la operación a la dirección y haz que tu negocio funcione sin ti.">
 <meta property="og:image" content="https://detodologoadirector.com/wp-content/uploads/2026/03/Post-de-Facebook-Oferta-de-Empleo-Ilustracion-3D-Moderno-Azul-y-Amarillo-1.png">
-<link rel="icon" href="https://detodologoadirector.com/wp-content/uploads/2024/10/cropped-Icono-De-Todologo-a-Director-270x270.png">
+<link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,14 +44,14 @@ section{padding:64px 0}
 header{position:sticky;top:0;z-index:50;background:rgba(14,30,58,.96);backdrop-filter:blur(8px)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:"Bricolage Grotesque";font-weight:800;font-size:1.05rem}
-.brand img{width:36px;height:36px;border-radius:8px}
+.brand img{width:40px;height:40px;border-radius:10px}
 .nav-links{display:none;gap:28px;list-style:none}
 .nav-links a{color:#C9D2E3;text-decoration:none;font-size:.95rem}
 .nav-links a:hover{color:#fff}
 .nav .btn{padding:10px 18px;min-height:42px;font-size:.92rem}
 
 /* hero */
-.hero{background:var(--navy);color:#fff;padding:48px 0 0;overflow:hidden}
+.hero{background:var(--navy);color:#fff;padding:48px 0 40px;overflow:hidden}
 .hero-grid{display:grid;gap:36px}
 .hero .tag{display:inline-flex;gap:8px;align-items:center;background:rgba(245,185,30,.14);color:var(--amber);border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:600;margin-bottom:18px}
 .hero h1{font-size:clamp(2.1rem,7.5vw,3.6rem);margin-bottom:18px}
@@ -59,15 +59,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,30,58,.96);backdrop-f
 .hero p.lead{color:#C9D2E3;font-size:1.1rem;margin-bottom:28px;max-width:540px}
 .hero-ctas{display:flex;flex-direction:column;gap:12px}
 .video{position:relative;width:100%;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.35)}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden;margin-top:40px;transform:translateY(32px)}
+.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;background:#000}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden;margin-top:36px}
 .fact{background:var(--navy-2);padding:18px 16px}
 .fact small{display:block;color:#93A0B8;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
 .fact strong{font-size:1.02rem}
 .fact.price strong{color:var(--amber);font-size:1.25rem}
 
 /* dolores */
-.pains{padding-top:96px}
+.pains{padding-top:64px}
 .pain-list{display:grid;gap:12px;margin-top:28px}
 .pain{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
 .pain .x{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#FDECEC;color:#C0392B;display:grid;place-items:center;font-weight:700;font-size:.9rem}
@@ -144,7 +144,7 @@ footer a{color:#C9D2E3}
   .mbar{display:none}
   .nav-links{display:flex}
   section{padding:96px 0}
-  .pains{padding-top:120px}
+  .pains{padding-top:96px}
   .hero{padding-top:72px}
   .hero-grid{grid-template-columns:1.05fr 1fr;align-items:center}
   .temario-grid{grid-template-columns:1fr 1fr;align-items:center}
@@ -153,20 +153,56 @@ footer a{color:#C9D2E3}
   .res-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   .res-img{margin-top:0}
 }
+
+/* v2 */
+.pain{padding:14px 16px}
+.testi{background:var(--cream)}
+.step .gain{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:.95rem}
+.step .gain small{display:block;color:var(--amber-dark);font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;margin-bottom:2px}
+.res-img{display:none;margin-top:28px}
+.sec-white{background:#fff}
+.modules{gap:8px;margin-top:20px}.modules li{padding:12px 16px}
+.pil{margin-top:16px}.pil summary{font-size:.98rem}.pil img{margin:0 0 18px}
+.when{background:var(--navy);color:#fff}
+.when .sec-sub{color:#C9D2E3}
+.when-grid{display:grid;gap:20px;margin-top:28px}
+.cal{background:#fff;color:var(--ink);border-radius:var(--radius);padding:20px}
+.cal h3{font-size:1.15rem;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline}
+.cal h3 small{font-family:Inter;font-size:.8rem;color:var(--muted);font-weight:500}
+.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;font-size:.88rem}
+.cal-g b{font-size:.7rem;color:var(--muted);font-weight:600;padding-bottom:4px}
+.cal-g span{padding:7px 0;border-radius:8px;color:#8A93A5}
+.cal-g span.on{background:var(--amber);color:var(--navy);font-weight:700}
+.cal-meta{margin-top:14px;font-size:.92rem;color:var(--muted)}
+.cal-meta strong{color:var(--ink)}
+.cal .btn{margin-top:14px;width:100%;border:1.5px solid var(--navy);color:var(--navy);padding:12px;min-height:46px;font-size:.92rem;background:transparent;cursor:pointer;font-family:inherit}
+.next{display:grid;gap:12px}
+.nx{display:flex;gap:14px;background:var(--navy-2);border-radius:14px;padding:16px}
+.nx .n{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--amber);color:var(--navy);display:grid;place-items:center;font-weight:800;font-family:"Bricolage Grotesque"}
+.nx h3{font-size:1.05rem;margin-bottom:2px}.nx p{color:#C9D2E3;font-size:.95rem}
+.faq-cta{margin-top:20px;font-weight:600}.faq-cta a{color:#128C4A}
+.cards{display:grid;gap:12px;margin:28px auto 0;max-width:900px;text-align:left}
+.card{display:block;text-decoration:none;background:var(--navy-2);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px 20px}
+.card.main{background:var(--amber);color:var(--navy);border-color:var(--amber)}
+.card strong{display:block;font-family:"Bricolage Grotesque";font-size:1.15rem}
+.card span{font-size:.92rem;opacity:.8}
+@media(min-width:720px){.when-grid{grid-template-columns:340px 1fr;align-items:start}.cards{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:960px){.res-split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.res-img{display:block;margin-top:0}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="brand"><img src="https://detodologoadirector.com/wp-content/uploads/2024/10/cropped-Icono-De-Todologo-a-Director-270x270.png" alt="">De Todólogo a Director</a>
+    <a href="#" class="brand"><img src="logo.png" alt="" width="40" height="40">De Todólogo a Director</a>
     <ul class="nav-links">
       <li><a href="#como-funciona">Cómo funciona</a></li>
       <li><a href="#temario">Temario</a></li>
       <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#fechas">Fechas</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">Apartar lugar</a>
+    <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">Apartar lugar</a>
   </div>
 </header>
 
@@ -175,11 +211,11 @@ footer a{color:#C9D2E3}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="tag">● Taller presencial · Tijuana</span>
+        <span class="tag">● Próximo taller: 29 y 30 de octubre · Tijuana</span>
         <h1>Pasa de la operación a la dirección y haz que tu negocio <span>funcione sin ti</span></h1>
         <p class="lead">Delega mejor, ordena tu operación y dirige con claridad sin tener que resolverlo todo tú. Un taller práctico de 2 días para dueños de negocio.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
             Quiero apartar mi lugar
           </a>
@@ -187,12 +223,14 @@ footer a{color:#C9D2E3}
         </div>
       </div>
       <div class="video">
-        <iframe src="https://iframe.mediadelivery.net/embed/310790/d3f3d234-da34-4492-9ba3-7af373cfb3b4?autoplay=false&loop=false&muted=false&preload=true&responsive=true" allow="accelerometer;gyroscope;encrypted-media;picture-in-picture;fullscreen" allowfullscreen title="Video del taller"></iframe>
+        <video controls playsinline preload="metadata" poster="poster.jpg" title="Video del taller"><source src="video-apertura.mp4" type="video/mp4"></video>
+        <!-- VIDEO ORIGINAL DE BUNNY (restaurar cuando esté listo el archivo correcto):
+        <iframe src="https://iframe.mediadelivery.net/embed/310790/d3f3d234-da34-4492-9ba3-7af373cfb3b4?autoplay=false&loop=false&muted=false&preload=true&responsive=true" allow="accelerometer;gyroscope;encrypted-media;picture-in-picture;fullscreen" allowfullscreen title="Video del taller"></iframe> -->
       </div>
     </div>
     <div class="facts">
-      <div class="fact"><small>Duración</small><strong>10 horas · 2 sesiones</strong></div>
-      <div class="fact"><small>Horario</small><strong>9:30 am – 2:30 pm</strong></div>
+      <div class="fact"><small>Fechas</small><strong>Jue 29 y vie 30 oct</strong></div>
+      <div class="fact"><small>Horario</small><strong>9:30 am – 2:30 pm · 10 h</strong></div>
       <div class="fact"><small>Ubicación</small><strong>Zona Río, Tijuana</strong></div>
       <div class="fact price"><small>Inversión</small><strong>$7,500 MXN</strong></div>
     </div>
@@ -215,52 +253,17 @@ footer a{color:#C9D2E3}
   </div>
 </section>
 
-<!-- CÓMO FUNCIONA -->
+<!-- CÓMO FUNCIONA + RESULTADOS -->
 <section class="steps-sec" id="como-funciona">
-  <div class="wrap">
-    <span class="eyebrow">Cómo funciona</span>
-    <h2 class="sec-title">De todólogo a director en 3 pasos</h2>
-    <p class="sec-sub">Un taller presencial, práctico y personalizado a las necesidades de tu negocio en este momento.</p>
-    <div class="steps">
-      <div class="step"><div class="num">01</div><h3>Diagnóstico</h3><p>Analizas tu negocio para saber con precisión en qué etapa se encuentra hoy.</p></div>
-      <div class="step"><div class="num">02</div><h3>Plan de acción</h3><p>Sales con un plan personalizado a tu empresa para implementar desde el primer día.</p></div>
-      <div class="step"><div class="num">03</div><h3>Metodología</h3><p>Te llevas el paso a paso exacto para dejar de ser el todólogo y convertirte en director de tu negocio.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- TEMARIO -->
-<section id="temario">
-  <div class="wrap temario-grid">
-    <div>
-      <span class="eyebrow">Temario</span>
-      <h2 class="sec-title">Lo que vas a trabajar en el taller</h2>
-      <ul class="modules">
-        <li><b>1</b>Diagnóstico de tu negocio</li>
-        <li><b>2</b>Cómo delegar efectivamente</li>
-        <li><b>3</b>Sistema de seguimiento y supervisión</li>
-        <li><b>4</b>Cómo vender más con menor esfuerzo</li>
-        <li><b>5</b>Incrementa tus ganancias y reduce el estrés en tu operación</li>
-        <li><b>6</b>Cómo tener un equipo alineado y comprometido con los resultados</li>
-      </ul>
-    </div>
-    <div class="pillars">
-      <img src="https://detodologoadirector.com/wp-content/uploads/2024/08/3-pilares-1-copia-1.png" alt="Los 3 pilares de la metodología De Todólogo a Director" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section class="results">
   <div class="wrap res-split">
     <div>
-      <span class="eyebrow">Resultados</span>
-      <h2 class="sec-title">Al terminar el taller te llevas</h2>
-      <p class="sec-sub">No es teoría: trabajas sobre tu propio negocio y sales con herramientas listas para aplicar.</p>
-      <div class="res-grid" style="grid-template-columns:1fr">
-        <div class="res"><h3>Claridad total</h3><p>Un diagnóstico que te dice exactamente en qué etapa está tu empresa.</p></div>
-        <div class="res"><h3>Un plan inmediato</h3><p>Acciones concretas, personalizadas a tu negocio, para empezar desde el día uno.</p></div>
-        <div class="res"><h3>Un método probado</h3><p>El paso a paso para delegar, ordenar y dirigir en lugar de operar.</p></div>
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="sec-title">De todólogo a director en 3 pasos</h2>
+      <p class="sec-sub">Un taller presencial, práctico y personalizado a tu negocio. No es teoría: trabajas sobre tu propia empresa.</p>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><h3>Diagnóstico</h3><p>Analizas tu negocio para saber con precisión en qué etapa se encuentra hoy.</p><div class="gain"><small>Te llevas</small>Claridad total sobre en qué etapa está tu empresa.</div></div>
+        <div class="step"><div class="num">02</div><h3>Plan de acción</h3><p>Construyes un plan personalizado a tu empresa para implementar desde el primer día.</p><div class="gain"><small>Te llevas</small>Un plan inmediato con acciones concretas.</div></div>
+        <div class="step"><div class="num">03</div><h3>Metodología</h3><p>El paso a paso exacto para dejar de ser el todólogo y convertirte en director.</p><div class="gain"><small>Te llevas</small>Un método probado para delegar, ordenar y dirigir.</div></div>
       </div>
     </div>
     <div class="res-img">
@@ -290,6 +293,51 @@ footer a{color:#C9D2E3}
   </div>
 </section>
 
+<!-- TEMARIO -->
+<section id="temario" class="sec-white">
+  <div class="wrap">
+    <span class="eyebrow">Temario</span>
+    <h2 class="sec-title">Lo que vas a trabajar</h2>
+    <ul class="modules">
+      <li><b>1</b>Diagnóstico de tu negocio</li>
+      <li><b>2</b>Cómo delegar efectivamente</li>
+      <li><b>3</b>Sistema de seguimiento y supervisión</li>
+      <li><b>4</b>Cómo vender más con menor esfuerzo</li>
+      <li><b>5</b>Incrementa tus ganancias y reduce el estrés en tu operación</li>
+      <li><b>6</b>Cómo tener un equipo alineado y comprometido con los resultados</li>
+    </ul>
+    <details class="pil"><summary>Ver los 3 pilares de la metodología</summary><img src="https://detodologoadirector.com/wp-content/uploads/2024/08/3-pilares-1-copia-1.png" alt="Los 3 pilares de la metodología De Todólogo a Director" loading="lazy"></details>
+  </div>
+</section>
+
+<!-- FECHAS + QUÉ PASA DESPUÉS -->
+<section class="when" id="fechas">
+  <div class="wrap">
+    <span class="eyebrow">Próxima fecha</span>
+    <h2 class="sec-title">Aparta tu lugar para el 29 y 30 de octubre</h2>
+    <p class="sec-sub">Los lugares son limitados porque el taller es personalizado.</p>
+    <div class="when-grid">
+      <div class="cal">
+        <h3>Octubre 2026 <small>Zona Río, Tijuana</small></h3>
+        <div class="cal-g"><b>D</b><b>L</b><b>M</b><b>M</b><b>J</b><b>V</b><b>S</b><span></span><span></span><span></span><span></span><span class="">1</span><span class="">2</span><span class="">3</span><span class="">4</span><span class="">5</span><span class="">6</span><span class="">7</span><span class="">8</span><span class="">9</span><span class="">10</span><span class="">11</span><span class="">12</span><span class="">13</span><span class="">14</span><span class="">15</span><span class="">16</span><span class="">17</span><span class="">18</span><span class="">19</span><span class="">20</span><span class="">21</span><span class="">22</span><span class="">23</span><span class="">24</span><span class="">25</span><span class="">26</span><span class="">27</span><span class="">28</span><span class="on">29</span><span class="on">30</span><span class="">31</span></div>
+        <p class="cal-meta"><strong>Jueves 29 y viernes 30</strong><br>9:30 am – 2:30 pm · $7,500 MXN</p>
+        <button class="btn" type="button" onclick="addCal()">📅 Agregar a mi calendario</button>
+      </div>
+      <div class="next">
+        <div class="nx"><span class="n">1</span><div><h3>Escríbenos por WhatsApp</h3><p>Un mensaje y listo. Ya va escrito, solo tocas enviar.</p></div></div>
+        <div class="nx"><span class="n">2</span><div><h3>Te confirmamos los detalles</h3><p>Disponibilidad, ubicación exacta y cómo reservar.</p></div></div>
+        <div class="nx"><span class="n">3</span><div><h3>Apartas y llegas el 29</h3><p>Dos sesiones prácticas para ordenar tu negocio.</p></div></div>
+        <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">Apartar mi lugar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function addCal(){var p=function(d){return 'BEGIN:VEVENT\r\nUID:todologo-'+d+'@detodologoadirector.com\r\nDTSTAMP:20261020T000000Z\r\nDTSTART:202610'+d+'T093000\r\nDTEND:202610'+d+'T143000\r\nSUMMARY:Taller De Todólogo a Director (sesión '+(d==29?1:2)+' de 2)\r\nLOCATION:Zona Río, Tijuana\r\nEND:VEVENT\r\n'};
+var t='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//De Todologo a Director//ES\r\n'+p(29)+p(30)+'END:VCALENDAR';
+var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/calendar'}));a.download='taller-de-todologo-a-director.ics';document.body.appendChild(a);a.click();a.remove()}
+</script>
+
 <!-- FAQ -->
 <section id="preguntas">
   <div class="wrap">
@@ -298,10 +346,10 @@ footer a{color:#C9D2E3}
     <div class="faq">
       <details><summary>¿Para quién es este taller?</summary><p>Para dueños de negocio que sienten que su empresa depende de ellos para funcionar y quieren delegar, ordenar su operación y dirigir con claridad.</p></details>
       <details><summary>¿Cuánto cuesta?</summary><p>La inversión es de $7,500 MXN por el taller completo de 2 sesiones.</p></details>
-      <details><summary>¿Dónde y cuándo es?</summary><p>Es presencial en Zona Río, Tijuana. Son 10 horas divididas en 2 sesiones prácticas, de 9:30 am a 2:30 pm. Escríbenos por WhatsApp para conocer las próximas fechas.</p></details>
+      <details><summary>¿Dónde y cuándo es?</summary><p>Presencial en Zona Río, Tijuana. La próxima fecha es el jueves 29 y viernes 30 de octubre, de 9:30 am a 2:30 pm (10 horas en total).</p></details>
       <details><summary>¿Es teórico o práctico?</summary><p>Práctico y personalizado: trabajas sobre tu propio negocio y sales con tu diagnóstico, tu plan de acción y la metodología para implementarlo.</p></details>
-      <details><summary>¿Cómo aparto mi lugar?</summary><p>Mándanos un WhatsApp al 664 333 6152 y te damos los detalles para reservar.</p></details>
     </div>
+    <p class="faq-cta">¿Te quedó otra duda? <a href="https://wa.me/526643336152?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">Pregúntanos por WhatsApp →</a></p>
   </div>
 </section>
 
@@ -310,14 +358,12 @@ footer a{color:#C9D2E3}
   <div class="wrap">
     <span class="eyebrow">Nuestra misión</span>
     <h2>Ayudarte a pasar de ser el todólogo a ser el director de tu negocio</h2>
-    <p>Los lugares son limitados porque el taller es personalizado. Escríbenos y aparta el tuyo.</p>
-    <div class="facts">
-      <div class="fact"><small>Duración</small><strong>10 horas · 2 sesiones</strong></div>
-      <div class="fact"><small>Horario</small><strong>9:30 am – 2:30 pm</strong></div>
-      <div class="fact"><small>Ubicación</small><strong>Zona Río, Tijuana</strong></div>
-      <div class="fact price"><small>Inversión</small><strong>$7,500 MXN</strong></div>
+    <p>Elige la forma que te acomode. Todas te llevan a WhatsApp.</p>
+    <div class="cards">
+      <a class="card main" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener"><strong>Apartar mi lugar</strong><span>Taller 29 y 30 de octubre</span></a>
+      <a class="card" href="https://wa.me/526643336152?text=Quiero%20agendar%20una%20llamada%20para%20conocer%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener"><strong>Agendar una llamada</strong><span>Platica con nosotros antes de decidir</span></a>
+      <a class="card" href="https://wa.me/526643336152?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener"><strong>Resolver una duda</strong><span>Te respondemos por mensaje</span></a>
     </div>
-    <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">Quiero apartar mi lugar</a>
   </div>
 </section>
 
@@ -327,8 +373,8 @@ footer a{color:#C9D2E3}
 
 <!-- barra fija en celular -->
 <div class="mbar">
-  <div class="p"><small>Taller 2 días</small><strong>$7,500 MXN</strong></div>
-  <a class="btn" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">Apartar por WhatsApp</a>
+  <div class="p"><small>29 y 30 oct · 2 días</small><strong>$7,500 MXN</strong></div>
+  <a class="btn" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">Apartar por WhatsApp</a>
 </div>
 
 </body>
