@@ -207,6 +207,58 @@ footer a{color:#C9D2E3}
 .gr .t-hint{text-align:center;margin-top:16px}
 @media(min-width:720px){.gcard{width:340px}}
 @media(prefers-reduced-motion:reduce){.mq{overflow-x:auto}.mq-track{animation:none}}
+
+/* v3 compacto en celular */
+@media(max-width:719px){
+  body{font-size:16px;line-height:1.5}
+  section{padding:34px 0}
+  .sec-title{font-size:1.55rem;margin-bottom:10px}
+  .eyebrow{margin-bottom:8px;font-size:.72rem}
+  .hero{padding:22px 0 24px}
+  .hero-grid{gap:20px}
+  .hero .tag{margin-bottom:12px;font-size:.78rem;padding:5px 12px}
+  .hero h1{font-size:1.85rem;margin-bottom:10px}
+  .hero p.lead{font-size:.98rem;margin-bottom:16px}
+  .hero-ctas .btn-ghost{display:none}
+  .hero-ctas .btn{padding:13px 20px;min-height:48px}
+  .facts{margin-top:20px}.fact{padding:11px 13px}.fact strong{font-size:.92rem}.fact.price strong{font-size:1.1rem}
+  .pains{padding-top:34px}
+  .pain-list{gap:8px;margin-top:16px}.pain{padding:10px 13px;gap:11px}.pain p{font-size:.93rem;line-height:1.4}.pain .x{width:24px;height:24px;font-size:.8rem}
+  .pain-cta{margin-top:14px;font-size:.95rem}
+  .sec-sub{font-size:.95rem}
+  .steps{gap:10px;margin-top:18px}
+  .step{display:grid;grid-template-columns:40px 1fr;column-gap:12px;padding:14px}
+  .step .num{grid-row:1/4;font-size:1.7rem;margin:0}
+  .step h3{font-size:1.05rem;margin-bottom:2px}
+  .step p{font-size:.9rem;line-height:1.4}
+  .step .gain{margin-top:8px;padding-top:8px;font-size:.86rem;line-height:1.35}
+  .gr{padding:34px 0 30px}.gbtn{margin:10px 0 16px;padding:9px 14px;min-height:40px;font-size:.85rem}
+  .mq{margin-top:0}.gcard{padding:14px;gap:7px}.gcard p{font-size:.88rem;line-height:1.4}
+  .gr .t-hint{margin-top:10px}
+  .modules{gap:6px;margin-top:14px}.modules li{padding:9px 13px;font-size:.93rem;line-height:1.35;gap:11px}
+  .pil{margin-top:10px}
+  .when-grid{gap:14px;margin-top:16px}
+  .cal{padding:14px}.cal h3{font-size:1rem;margin-bottom:8px}.cal-g{gap:2px;font-size:.8rem}.cal-g span{padding:4px 0}.cal-meta{margin-top:8px;font-size:.88rem}
+  .cal .btn{margin-top:10px;padding:9px;min-height:40px;font-size:.88rem}
+  .next{gap:8px}.nx{padding:11px 13px;gap:11px;align-items:center}.nx .n{width:28px;height:28px;font-size:.9rem}.nx h3{font-size:.98rem;margin:0}.nx p{display:none}
+  .faq{gap:8px;margin-top:16px}details{padding:0 15px}summary{padding:13px 0;font-size:.95rem}details p{padding-bottom:13px;font-size:.92rem}
+  .faq-cta{margin-top:12px;font-size:.93rem}
+  .final h2{font-size:1.5rem;margin-bottom:10px}.final p{margin-bottom:6px;font-size:.93rem}
+  .cards{gap:8px;margin-top:14px}.card{padding:12px 16px}.card strong{font-size:1.02rem}.card span{font-size:.85rem}
+  footer{padding:18px 20px}
+}
+
+/* autodiagnóstico */
+.pain{cursor:pointer;transition:border-color .15s,background .15s;-webkit-tap-highlight-color:transparent;position:relative}
+.pain input{position:absolute;opacity:0;pointer-events:none}
+.pain .x{background:#fff;border:2px solid #C9CFDB;color:transparent;border-radius:8px;font-size:.85rem;font-weight:800;transition:all .15s}
+.pain.on{border-color:var(--amber);background:#FFF8E5}
+.pain.on .x{background:var(--amber);border-color:var(--amber);color:var(--navy)}
+.pain:has(input:focus-visible){outline:2px solid var(--navy);outline-offset:2px}
+.dx{margin-top:14px;padding:14px 16px;border-radius:14px;background:#fff;border:1px dashed #C9CFDB}
+.dx-t{font-weight:600;font-size:.95rem}
+.dx-btn{margin-top:10px;width:100%;min-height:46px;padding:12px 18px;font-size:.95rem}
+.dx-btn[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -232,7 +284,7 @@ footer a{color:#C9D2E3}
       <div>
         <span class="tag">● Próximo taller: 29 y 30 de octubre · Tijuana</span>
         <h1>Pasa de la operación a la dirección y haz que tu negocio <span>funcione sin ti</span></h1>
-        <p class="lead">Delega mejor, ordena tu operación y dirige con claridad sin tener que resolverlo todo tú. Un taller práctico de 2 días para dueños de negocio.</p>
+        <p class="lead">Delega, ordena tu operación y dirige con claridad. Taller práctico de 2 días para dueños de negocio.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
@@ -261,14 +313,26 @@ footer a{color:#C9D2E3}
   <div class="wrap">
     <span class="eyebrow">¿Te identificas?</span>
     <h2 class="sec-title">Tu negocio todavía depende de ti si hoy te pasa esto</h2>
-    <div class="pain-list">
-      <div class="pain"><span class="x">✕</span><p>Tu negocio depende de ti para funcionar.</p></div>
-      <div class="pain"><span class="x">✕</span><p>Tienes empleados poco comprometidos o con mucho tiempo muerto.</p></div>
-      <div class="pain"><span class="x">✕</span><p>No cuentas con un sistema de ventas predecible.</p></div>
-      <div class="pain"><span class="x">✕</span><p>Tu negocio no tiene procesos establecidos, y si los tiene, no se aplican.</p></div>
-      <div class="pain"><span class="x">✕</span><p>Hay desorden en las finanzas y no conoces con claridad las utilidades de tu negocio.</p></div>
+    <div class="pain-list" id="dx-list">
+      <label class="pain"><input type="checkbox" value="Tu negocio depende de ti para funcionar."><span class="x" aria-hidden="true">✓</span><p>Tu negocio depende de ti para funcionar.</p></label>
+      <label class="pain"><input type="checkbox" value="Tu equipo está poco comprometido o con tiempo muerto."><span class="x" aria-hidden="true">✓</span><p>Tu equipo está poco comprometido o con tiempo muerto.</p></label>
+      <label class="pain"><input type="checkbox" value="No tienes un sistema de ventas predecible."><span class="x" aria-hidden="true">✓</span><p>No tienes un sistema de ventas predecible.</p></label>
+      <label class="pain"><input type="checkbox" value="Sin procesos que se apliquen ni claridad en tus utilidades."><span class="x" aria-hidden="true">✓</span><p>Sin procesos que se apliquen ni claridad en tus utilidades.</p></label>
     </div>
-    <p class="pain-cta">Si marcaste al menos una, este taller es para ti. 👇</p>
+    <div class="dx" id="dx" aria-live="polite">
+      <p class="dx-t" id="dx-t">Toca las que te pasen hoy 👆</p>
+      <a class="btn btn-primary dx-btn" id="dx-b" href="#" target="_blank" rel="noopener" hidden>Platicar mi caso por WhatsApp</a>
+    </div>
+    <script>
+    (function(){var L=document.getElementById('dx-list'),T=document.getElementById('dx-t'),B=document.getElementById('dx-b'),N=L.querySelectorAll('input').length;
+    var M={0:'Toca las que te pasen hoy 👆',1:'Marcaste 1 de '+N+'. Con una basta: este taller es para ti.',2:'Marcaste 2 de '+N+'. Tu negocio todavía depende de ti, y este taller es para cambiarlo.'};
+    function u(){var c=[].filter.call(L.querySelectorAll('input'),function(i){return i.checked});
+    [].forEach.call(L.querySelectorAll('.pain'),function(p){p.classList.toggle('on',p.querySelector('input').checked)});
+    var n=c.length;T.textContent=n>2?'Marcaste '+n+' de '+N+'. Tu negocio depende mucho de ti, y este taller es justo para ti.':M[n];
+    B.hidden=n===0;if(n){var m='Hola, hice el autodiagnóstico en su página y me identifiqué con '+n+' de '+N+':\n'+c.map(function(i){return '• '+i.value}).join('\n')+'\nQuiero información para apartar mi lugar en el taller del 29 y 30 de octubre.';
+    B.href='https://wa.me/526643336152?text='+encodeURIComponent(m)}}
+    L.addEventListener('change',u);u()})();
+    </script>
   </div>
 </section>
 
@@ -278,11 +342,10 @@ footer a{color:#C9D2E3}
     <div>
       <span class="eyebrow">Cómo funciona</span>
       <h2 class="sec-title">De todólogo a director en 3 pasos</h2>
-      <p class="sec-sub">Un taller presencial, práctico y personalizado a tu negocio. No es teoría: trabajas sobre tu propia empresa.</p>
       <div class="steps">
-        <div class="step"><div class="num">01</div><h3>Diagnóstico</h3><p>Analizas tu negocio para saber con precisión en qué etapa se encuentra hoy.</p><div class="gain"><small>Te llevas</small>Claridad total sobre en qué etapa está tu empresa.</div></div>
-        <div class="step"><div class="num">02</div><h3>Plan de acción</h3><p>Construyes un plan personalizado a tu empresa para implementar desde el primer día.</p><div class="gain"><small>Te llevas</small>Un plan inmediato con acciones concretas.</div></div>
-        <div class="step"><div class="num">03</div><h3>Metodología</h3><p>El paso a paso exacto para dejar de ser el todólogo y convertirte en director.</p><div class="gain"><small>Te llevas</small>Un método probado para delegar, ordenar y dirigir.</div></div>
+        <div class="step"><div class="num">01</div><h3>Diagnóstico</h3><div class="gain"><small>Te llevas</small>Claridad total sobre en qué etapa está tu empresa.</div></div>
+        <div class="step"><div class="num">02</div><h3>Plan de acción</h3><div class="gain"><small>Te llevas</small>Un plan inmediato con acciones concretas.</div></div>
+        <div class="step"><div class="num">03</div><h3>Metodología</h3><div class="gain"><small>Te llevas</small>Un método probado para delegar, ordenar y dirigir.</div></div>
       </div>
     </div>
     <div class="res-img">
@@ -335,10 +398,10 @@ footer a{color:#C9D2E3}
     <ul class="modules">
       <li><b>1</b>Diagnóstico de tu negocio</li>
       <li><b>2</b>Cómo delegar efectivamente</li>
-      <li><b>3</b>Sistema de seguimiento y supervisión</li>
-      <li><b>4</b>Cómo vender más con menor esfuerzo</li>
-      <li><b>5</b>Incrementa tus ganancias y reduce el estrés en tu operación</li>
-      <li><b>6</b>Cómo tener un equipo alineado y comprometido con los resultados</li>
+      <li><b>3</b>Seguimiento y supervisión</li>
+      <li><b>4</b>Vender más con menos esfuerzo</li>
+      <li><b>5</b>Más ganancias, menos estrés</li>
+      <li><b>6</b>Un equipo alineado y comprometido</li>
     </ul>
     <details class="pil"><summary>Ver los 3 pilares de la metodología</summary><img src="https://detodologoadirector.com/wp-content/uploads/2024/08/3-pilares-1-copia-1.png" alt="Los 3 pilares de la metodología De Todólogo a Director" loading="lazy"></details>
   </div>
