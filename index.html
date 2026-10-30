@@ -9,6 +9,7 @@
 <meta property="og:description" content="Pasa de la operación a la dirección y haz que tu negocio funcione sin ti.">
 <meta property="og:image" content="https://detodologoadirector.com/wp-content/uploads/2026/03/Post-de-Facebook-Oferta-de-Empleo-Ilustracion-3D-Moderno-Azul-y-Amarillo-1.png">
 <link rel="icon" href="logo.png">
+<script src="fechas.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -259,6 +260,25 @@ footer a{color:#C9D2E3}
 .dx-t{font-weight:600;font-size:.95rem}
 .dx-btn{margin-top:10px;width:100%;min-height:46px;padding:12px 18px;font-size:.95rem}
 .dx-btn[hidden]{display:none}
+
+/* shorts youtube */
+.shorts{background:var(--cream);color:var(--ink);padding:34px 0 30px;overflow:hidden}
+.shorts .sec-title{color:var(--ink)}
+.shorts .btn-ghost{border-color:var(--navy);color:var(--navy)}
+.shorts .btn-ghost:hover{background:rgba(14,30,58,.06)}
+.shorts .mq{margin:14px 0 16px}
+.sh{flex:0 0 auto;position:relative;width:150px;aspect-ratio:9/16;margin-right:12px;border:0;border-radius:14px;overflow:hidden;background:#1d2b4a;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sh img{width:100%;height:100%;object-fit:cover}
+.sh .pl{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(transparent 55%,rgba(0,0,0,.45))}
+.sh .pl svg{width:44px;height:44px;padding:11px;border-radius:50%;background:rgba(14,30,58,.78)}
+.sh:hover{outline:2px solid var(--amber)}
+.sh-more{display:flex;max-width:340px;margin:0 auto;min-height:46px;padding:11px 20px;font-size:.95rem}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(5,10,22,.88);display:grid;place-items:center}
+.modal[hidden]{display:none}
+.mv{height:min(86vh,760px);aspect-ratio:9/16;max-width:94vw;background:#000;border-radius:14px;overflow:hidden}
+.mv iframe{width:100%;height:100%;border:0}
+.mx{position:absolute;top:calc(12px + env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:var(--navy);font-size:1.1rem;font-weight:700;cursor:pointer}
+@media(min-width:720px){.sh{width:170px}.shorts{padding:64px 0}}
 </style>
 </head>
 <body>
@@ -282,7 +302,7 @@ footer a{color:#C9D2E3}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="tag">● Próximo taller: 29 y 30 de octubre · Tijuana</span>
+        <span class="tag">● Próximo taller: <span data-f="largo">29 y 30 de octubre</span> · Tijuana</span>
         <h1>Pasa de la operación a la dirección y haz que tu negocio <span>funcione sin ti</span></h1>
         <p class="lead">Delega, ordena tu operación y dirige con claridad. Taller práctico de 2 días para dueños de negocio.</p>
         <div class="hero-ctas">
@@ -300,10 +320,10 @@ footer a{color:#C9D2E3}
       </div>
     </div>
     <div class="facts">
-      <div class="fact"><small>Fechas</small><strong>Jue 29 y vie 30 oct</strong></div>
-      <div class="fact"><small>Horario</small><strong>9:30 am – 2:30 pm · 10 h</strong></div>
-      <div class="fact"><small>Ubicación</small><strong>Zona Río, Tijuana</strong></div>
-      <div class="fact price"><small>Inversión</small><strong>$7,500 MXN</strong></div>
+      <div class="fact"><small>Fechas</small><strong data-f="dias">Jue 29 y vie 30 oct</strong></div>
+      <div class="fact"><small>Horario</small><strong data-f="horarioH">9:30 am – 2:30 pm · 10 h</strong></div>
+      <div class="fact"><small>Ubicación</small><strong data-f="lugar">Zona Río, Tijuana</strong></div>
+      <div class="fact price"><small>Inversión</small><strong data-f="precio">$7,500 MXN</strong></div>
     </div>
   </div>
 </section>
@@ -329,7 +349,7 @@ footer a{color:#C9D2E3}
     function u(){var c=[].filter.call(L.querySelectorAll('input'),function(i){return i.checked});
     [].forEach.call(L.querySelectorAll('.pain'),function(p){p.classList.toggle('on',p.querySelector('input').checked)});
     var n=c.length;T.textContent=n>2?'Marcaste '+n+' de '+N+'. Tu negocio depende mucho de ti, y este taller es justo para ti.':M[n];
-    B.hidden=n===0;if(n){var m='Hola, hice el autodiagnóstico en su página y me identifiqué con '+n+' de '+N+':\n'+c.map(function(i){return '• '+i.value}).join('\n')+'\nQuiero información para apartar mi lugar en el taller del 29 y 30 de octubre.';
+    B.hidden=n===0;if(n){var m='Hola, hice el autodiagnóstico en su página y me identifiqué con '+n+' de '+N+':\n'+c.map(function(i){return '• '+i.value}).join('\n')+'\nQuiero información para apartar mi lugar en el taller del '+(window.TXT?TXT.largo:'29 y 30 de octubre')+'.';
     B.href='https://wa.me/526643336152?text='+encodeURIComponent(m)}}
     L.addEventListener('change',u);u()})();
     </script>
@@ -411,19 +431,19 @@ footer a{color:#C9D2E3}
 <section class="when" id="fechas">
   <div class="wrap">
     <span class="eyebrow">Próxima fecha</span>
-    <h2 class="sec-title">Aparta tu lugar para el 29 y 30 de octubre</h2>
+    <h2 class="sec-title">Aparta tu lugar para el <span data-f="largo">29 y 30 de octubre</span></h2>
     <p class="sec-sub">Los lugares son limitados porque el taller es personalizado.</p>
     <div class="when-grid">
       <div class="cal">
-        <h3>Octubre 2026 <small>Zona Río, Tijuana</small></h3>
-        <div class="cal-g"><b>D</b><b>L</b><b>M</b><b>M</b><b>J</b><b>V</b><b>S</b><span></span><span></span><span></span><span></span><span class="">1</span><span class="">2</span><span class="">3</span><span class="">4</span><span class="">5</span><span class="">6</span><span class="">7</span><span class="">8</span><span class="">9</span><span class="">10</span><span class="">11</span><span class="">12</span><span class="">13</span><span class="">14</span><span class="">15</span><span class="">16</span><span class="">17</span><span class="">18</span><span class="">19</span><span class="">20</span><span class="">21</span><span class="">22</span><span class="">23</span><span class="">24</span><span class="">25</span><span class="">26</span><span class="">27</span><span class="">28</span><span class="on">29</span><span class="on">30</span><span class="">31</span></div>
-        <p class="cal-meta"><strong>Jueves 29 y viernes 30</strong><br>9:30 am – 2:30 pm · $7,500 MXN</p>
+        <h3><span data-f="mesTitulo">Octubre 2026</span> <small data-f="lugar">Zona Río, Tijuana</small></h3>
+        <div class="cal-g" id="cal-g"><b>D</b><b>L</b><b>M</b><b>M</b><b>J</b><b>V</b><b>S</b><span></span><span></span><span></span><span></span><span class="">1</span><span class="">2</span><span class="">3</span><span class="">4</span><span class="">5</span><span class="">6</span><span class="">7</span><span class="">8</span><span class="">9</span><span class="">10</span><span class="">11</span><span class="">12</span><span class="">13</span><span class="">14</span><span class="">15</span><span class="">16</span><span class="">17</span><span class="">18</span><span class="">19</span><span class="">20</span><span class="">21</span><span class="">22</span><span class="">23</span><span class="">24</span><span class="">25</span><span class="">26</span><span class="">27</span><span class="">28</span><span class="on">29</span><span class="on">30</span><span class="">31</span></div>
+        <p class="cal-meta"><strong data-f="diasLargo">Jueves 29 y viernes 30</strong><br><span data-f="horario">9:30 am – 2:30 pm</span> · <span data-f="precio">$7,500 MXN</span></p>
         <button class="btn" type="button" onclick="addCal()">📅 Agregar a mi calendario</button>
       </div>
       <div class="next">
         <div class="nx"><span class="n">1</span><div><h3>Escríbenos por WhatsApp</h3><p>Un mensaje y listo. Ya va escrito, solo tocas enviar.</p></div></div>
         <div class="nx"><span class="n">2</span><div><h3>Te confirmamos los detalles</h3><p>Disponibilidad, ubicación exacta y cómo reservar.</p></div></div>
-        <div class="nx"><span class="n">3</span><div><h3>Apartas y llegas el 29</h3><p>Dos sesiones prácticas para ordenar tu negocio.</p></div></div>
+        <div class="nx"><span class="n">3</span><div><h3>Apartas y llegas el <span data-f="d1">29</span></h3><p>Dos sesiones prácticas para ordenar tu negocio.</p></div></div>
         <a class="btn btn-primary" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">Apartar mi lugar por WhatsApp</a>
       </div>
     </div>
@@ -442,8 +462,8 @@ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:
     <h2 class="sec-title">Lo que más nos preguntan</h2>
     <div class="faq">
       <details><summary>¿Para quién es este taller?</summary><p>Para dueños de negocio que sienten que su empresa depende de ellos para funcionar y quieren delegar, ordenar su operación y dirigir con claridad.</p></details>
-      <details><summary>¿Cuánto cuesta?</summary><p>La inversión es de $7,500 MXN por el taller completo de 2 sesiones.</p></details>
-      <details><summary>¿Dónde y cuándo es?</summary><p>Presencial en Zona Río, Tijuana. La próxima fecha es el jueves 29 y viernes 30 de octubre, de 9:30 am a 2:30 pm (10 horas en total).</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>La inversión es de <span data-f="precio">$7,500 MXN</span> por el taller completo.</p></details>
+      <details><summary>¿Dónde y cuándo es?</summary><p>Presencial en Zona Río, Tijuana. La próxima fecha es <span data-f="faqFecha">el jueves 29 y viernes 30 de octubre, de 9:30 am a 2:30 pm (10 horas en total)</span>.</p></details>
       <details><summary>¿Es teórico o práctico?</summary><p>Práctico y personalizado: trabajas sobre tu propio negocio y sales con tu diagnóstico, tu plan de acción y la metodología para implementarlo.</p></details>
     </div>
     <p class="faq-cta">¿Te quedó otra duda? <a href="https://wa.me/526643336152?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener">Pregúntanos por WhatsApp →</a></p>
@@ -457,12 +477,32 @@ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:
     <h2>Ayudarte a pasar de ser el todólogo a ser el director de tu negocio</h2>
     <p>Elige la forma que te acomode. Todas te llevan a WhatsApp.</p>
     <div class="cards">
-      <a class="card main" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener"><strong>Apartar mi lugar</strong><span>Taller 29 y 30 de octubre</span></a>
+      <a class="card main" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener"><strong>Apartar mi lugar</strong><span>Taller <span data-f="largo">29 y 30 de octubre</span></span></a>
       <a class="card" href="https://wa.me/526643336152?text=Quiero%20agendar%20una%20llamada%20para%20conocer%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener"><strong>Agendar una llamada</strong><span>Platica con nosotros antes de decidir</span></a>
       <a class="card" href="https://wa.me/526643336152?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20taller%20De%20Tod%C3%B3logo%20a%20Director" target="_blank" rel="noopener"><strong>Resolver una duda</strong><span>Te respondemos por mensaje</span></a>
     </div>
   </div>
 </section>
+
+<!-- SHORTS DE YOUTUBE -->
+<section class="shorts" id="videos">
+  <div class="wrap">
+    <span class="eyebrow">En YouTube</span>
+    <h2 class="sec-title">Mira ideas en video</h2>
+  </div>
+  <div class="mq rev" aria-label="Videos de YouTube"><div class="mq-track" id="sh-track"><button class="sh" type="button" data-id="W0eXvJOHY1A" aria-label="Ver video 1"><img src="https://i.ytimg.com/vi/W0eXvJOHY1A/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="xFwXaASezUQ" aria-label="Ver video 2"><img src="https://i.ytimg.com/vi/xFwXaASezUQ/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="52nBO270KTg" aria-label="Ver video 3"><img src="https://i.ytimg.com/vi/52nBO270KTg/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="ewcbHoY3dTM" aria-label="Ver video 4"><img src="https://i.ytimg.com/vi/ewcbHoY3dTM/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="S-9sEdgsaqc" aria-label="Ver video 5"><img src="https://i.ytimg.com/vi/S-9sEdgsaqc/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="bBLqmblVkcE" aria-label="Ver video 6"><img src="https://i.ytimg.com/vi/bBLqmblVkcE/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button><button class="sh" type="button" data-id="nJh6RurV4WU" aria-label="Ver video 7"><img src="https://i.ytimg.com/vi/nJh6RurV4WU/hqdefault.jpg" alt="" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span></button></div></div>
+  <div class="wrap"><a class="btn btn-ghost sh-more" href="https://www.youtube.com/results?search_query=De+Tod%C3%B3logo+a+Director" target="_blank" rel="noopener">Ver más en YouTube</a></div>
+</section>
+<div class="modal" id="vm" hidden><button class="mx" type="button" aria-label="Cerrar video">✕</button><div class="mv"><iframe id="vf" title="Video de YouTube" allow="autoplay;encrypted-media;picture-in-picture;fullscreen" allowfullscreen></iframe></div></div>
+<script>
+(function(){var t=document.getElementById('sh-track'),b=t.innerHTML,w=t.scrollWidth||1,k=Math.max(1,Math.ceil(t.parentNode.offsetWidth/w)),h=new Array(k+1).join(b);t.innerHTML=h+h;t.style.setProperty('--dur',Math.max(30,Math.round(w*k/40))+'s');
+var m=document.getElementById('vm'),f=document.getElementById('vf');
+function o(id){f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1';m.hidden=false;document.body.style.overflow='hidden'}
+function c(){m.hidden=true;f.src='about:blank';document.body.style.overflow=''}
+t.addEventListener('click',function(e){var s=e.target.closest('.sh');if(s)o(s.getAttribute('data-id'))});
+m.addEventListener('click',function(e){if(e.target===m||e.target.classList.contains('mx'))c()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)c()})})();
+</script>
 
 <footer>
   © 2026 De Todólogo a Director · Tijuana, B.C. · WhatsApp <a href="https://wa.me/526643336152">664 333 6152</a>
@@ -470,9 +510,37 @@ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:
 
 <!-- barra fija en celular -->
 <div class="mbar">
-  <div class="p"><small>29 y 30 oct · 2 días</small><strong>$7,500 MXN</strong></div>
+  <div class="p"><small><span data-f="corto">29 y 30 oct</span> · <span data-f="nDias">2 días</span></small><strong data-f="precio">$7,500 MXN</strong></div>
   <a class="btn" href="https://wa.me/526643336152?text=Quiero%20apartar%20mi%20lugar%20en%20el%20taller%20del%2029%20y%2030%20de%20octubre" target="_blank" rel="noopener">Apartar por WhatsApp</a>
 </div>
 
+
+<script>
+(function(){var T=window.TALLER;if(!T||!T.dia1)return;
+var M='enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split(' '),A='ene feb mar abr may jun jul ago sep oct nov dic'.split(' '),D='domingo lunes martes miércoles jueves viernes sábado'.split(' '),DA='Dom Lun Mar Mié Jue Vie Sáb'.split(' ');
+function P(s){var a=s.split('-');return new Date(+a[0],+a[1]-1,+a[2])}
+var a=P(T.dia1),b=T.dia2?P(T.dia2):null,two=!!b&&b.getTime()!==a.getTime(),same=two&&a.getMonth()===b.getMonth()&&a.getFullYear()===b.getFullYear(),n=two?2:1;
+function h12(t){var p=t.split(':'),h=+p[0],s=h>=12?'pm':'am';h=h%12||12;return h+':'+p[1]+' '+s}
+function mins(t){var p=t.split(':');return +p[0]*60+ +p[1]}
+var tot=Math.round((mins(T.fin)-mins(T.inicio))/60*n*10)/10,cap=function(s){return s.charAt(0).toUpperCase()+s.slice(1)},da=a.getDate(),db=two?b.getDate():0,ma=M[a.getMonth()],ya=A[a.getMonth()],nm=two&&!same;
+var F={};
+F.largo=!two?da+' de '+ma:same?da+' y '+db+' de '+ma:da+' de '+ma+' y '+db+' de '+M[b.getMonth()];
+F.corto=!two?da+' '+ya:same?da+' y '+db+' '+ya:da+' '+ya+' y '+db+' '+A[b.getMonth()];
+F.dias=!two?DA[a.getDay()]+' '+da+' '+ya:DA[a.getDay()]+' '+da+(nm?' '+ya:'')+' y '+DA[b.getDay()].toLowerCase()+' '+db+' '+A[b.getMonth()];
+F.diasLargo=!two?cap(D[a.getDay()])+' '+da:cap(D[a.getDay()])+' '+da+(nm?' '+ya:'')+' y '+D[b.getDay()]+' '+db+(nm?' '+A[b.getMonth()]:'');
+F.faqFecha='el '+D[a.getDay()]+' '+da+(nm?' de '+ma:'')+(two?' y '+D[b.getDay()]+' '+db:'')+' de '+(nm?M[b.getMonth()]:ma)+', de '+h12(T.inicio)+' a '+h12(T.fin)+' ('+tot+' horas en total)';
+F.horario=h12(T.inicio)+' – '+h12(T.fin);F.horarioH=F.horario+' · '+tot+' h';F.mesTitulo=cap(ma)+' '+a.getFullYear();F.d1=da;F.nDias=n+(n>1?' días':' día');F.precio=T.precio;F.lugar=T.lugar;
+[].forEach.call(document.querySelectorAll('[data-f]'),function(e){var v=F[e.getAttribute('data-f')];if(v!=null&&v!=='')e.textContent=v});
+window.TXT={largo:F.largo};
+var enc=encodeURIComponent(F.largo);[].forEach.call(document.querySelectorAll('a[href*="wa.me"]'),function(l){l.href=l.getAttribute('href').replace('29%20y%2030%20de%20octubre',enc)});
+var cg=document.getElementById('cal-g');if(cg){var y=a.getFullYear(),m=a.getMonth(),f=new Date(y,m,1).getDay(),dim=new Date(y,m+1,0).getDate(),h='';
+for(var i=0;i<7;i++)h+='<b>'+'DLMMJVS'.charAt(i)+'</b>';for(i=0;i<f;i++)h+='<span></span>';
+for(i=1;i<=dim;i++){var on=(i===da)||(two&&b.getMonth()===m&&b.getFullYear()===y&&i===db);h+='<span class="'+(on?'on':'')+'">'+i+'</span>'}cg.innerHTML=h}
+function z(x){return(x<10?'0':'')+x}function ds(d){return d.getFullYear()+z(d.getMonth()+1)+z(d.getDate())}
+window.addCal=function(){var ev=function(d,k){return 'BEGIN:VEVENT\r\nUID:todologo-'+ds(d)+'@detodologoadirector.com\r\nDTSTAMP:'+ds(new Date())+'T000000Z\r\nDTSTART:'+ds(d)+'T'+T.inicio.replace(':','')+'00\r\nDTEND:'+ds(d)+'T'+T.fin.replace(':','')+'00\r\nSUMMARY:Taller De Todólogo a Director'+(n>1?' (sesión '+k+' de '+n+')':'')+'\r\nLOCATION:'+T.lugar+'\r\nEND:VEVENT\r\n'};
+var t='BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//De Todologo a Director//ES\r\n'+ev(a,1)+(two?ev(b,2):'')+'END:VCALENDAR';
+var l=document.createElement('a');l.href=URL.createObjectURL(new Blob([t],{type:'text/calendar'}));l.download='taller-de-todologo-a-director.ics';document.body.appendChild(l);l.click();l.remove()};
+})();
+</script>
 </body>
 </html>
